@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A minimalist, single-page portfolio for Sudeepa Reddy.">
+    <title>Sudeepa Reddy's Portfolio</title>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' fill='none'%3E%3Ccircle cx='20' cy='20' r='18' stroke='%23F9F9F9' stroke-width='2'/%3E%3Cpath d='M14 20L20 26L26 20' stroke='%23F9F9F9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <header class="sticky-header">
+        <nav class="nav-bar">
+            <a href="#hero" class="logo-link">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="var(--text-color)" stroke-width="2"/>
+                    <path d="M14 20L20 26L26 20" stroke="var(--text-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+            <div class="nav-links">
+                <a href="#hero">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Sudeepa Reddy.</h1>
+                    <p class="tagline">Learning. Exploring. Evolving.</p>
+                    <p class="about-text">I’m a tech and finance enthusiast — learning every day, building with purpose, and growing with intent. Currently diving into AI/ML and frontend development, I’m focused on learning new things and growing my skills.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="button primary-button">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me.</p>
+                <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="_replyto" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="I'd love to chat about..."></textarea>
+                    </div>
+                    <button type="submit" class="button primary-button">Send Message</button>
+                </form>
+                <div class="contact-links">
+                    <p>Or find me on:</p>
+                    <a href="mailto:sudeepareddy295@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/sudeepa77" target="_blank">LinkedIn</a>
+                    <a href="https://instagram.com/sudeeepareddy" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Message box for form submissions -->
+    <div id="message-box" class="message-box">
+        Message sent successfully!
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
